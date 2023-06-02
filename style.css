@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(180deg, #b0ffc1,#c1fdce, #dbfaeb,#c3d6ff);
+}
+
+.home{
+    width: 100%;
+    min-height: 85vh;
+    position: relative;
+    overflow: hidden;
+}
+
+section{
+    min-height: 70vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    transition: all 2s ease;
+}
+
+nav .logo{
+    margin-left: 10%;
+}
+
+nav .logo h1{
+    font-size: 24px;
+    color: #66b3ff;
+}
+
+nav .logo h1:hover{
+    color: #0073e6;
+}
+
+nav ul{
+    display: flex;
+    gap: 5rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+nav ul li a:hover{
+    color: #66b3ff;
+}
+
+.active{
+    color: #66b3ff;
+}
+
+nav button{
+    margin-right: 10%;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1rem;
+    border: none;
+    background-color: #b3d9ff;
+}
+
+nav button:hover{
+    border: 1px solid #0073e6;
+    background: #fff;
+}
+
+.header-title{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+    transition: all 2s ease;
+}
+.me{
+    display: grid;
+    place-items: center;
+}
+.me img{
+    width: 40rem;
+    padding: 1rem;
+    background: #66b3ff;
+    border-radius: 50%;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.social img{
+    width: 3rem;
+    padding: .2rem;
+    background: #66b3ff;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+.bio{
+    padding: 1.5rem;
+}
+
+.bio h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.bio p{
+    font-size: 1.4rem;
+    color: #3f3f3f;
+}
+
+.experience{
+    padding: 4rem;
+}
+.experience h3{
+    font-size: 2rem;
+}
+
+.experience h1{
+    margin-top: 1.5rem;
+    color: #3f3f3f;
+}
+
+/* skills */
+
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dev-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background: #cdd5dd;
+    width: 300px;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 0 #b3d9ff;
+}
+
+.skill{
+    display: grid;
+    place-items: center;
+    background: #b3d9ff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    border: 1px solid #66b3ff;
+}
+
+.dev-container:hover {
+    background: #fff;
+}
+.skill img{
+    width: 5rem;
+    height: 5rem;
+    background: #66b3ff;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.dev{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 2rem;
+}
+
+.title{
+    display: grid;
+    place-items: center;
+}
+
+.title h2{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #3f3f3f;
+    border-bottom: 2px solid #3f3f3f;
+    margin-bottom: 5rem;
+}
+
+.title p{
+    text-align: center;
+}
+
+/* qualification */
+
+.qualification{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.education{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.masters{
+    margin: 5rem;
+}
+
+.masters h3{
+    font-size: 1.5rem;
+    margin-bottom: 16px
+}
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.service{
+    text-align: center;
+    background: #c3d6ff;
+    padding: 4rem;
+    border-radius: 3rem;
+    border: 1px solid #66b3ff;
+}
+
+.service h3{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.service p{
+    line-height: 2rem;
+    font-size: 16px;
+}
+
+/* projects */
+
+.project{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+.recent{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.anim{
+    text-align: center;
+}
+
+.anim img{
+    border: 1px solid var(--color-primary);
+    border-radius: 3rem;
+    border: 1px solid #0073e6;
+    width: 450px;
+  }
+  .anim h1{
+    color: var(--color-dark);
+  }
+  
+  .anim h1:hover{
+    color: var(--color-primary);
+  }
+  
+  .anim p{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    color: rgb(49, 43, 43);
+  }
+
+  /* contact */
+
+  .contact{
+    display: grid;
+    place-items: center;
+  }
+
+  .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background: #b3d9ff;
+    width: 70%;
+    border-radius: 4rem;
+  }
+
+  .left-form h1{
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    color: #3f3f3f;
+}
+
+.left-form p{
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.right-form{
+    padding: 2rem;
+
+  }
+
+  form h1{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  form input{
+    width: 100%;
+    text-align: center;
+    height: 3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #66b3ff;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+  }
+
+  form textarea{
+    width: 100%;
+    resize: none;
+    border: 1px solid #66b3ff;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 9rem;
+  }
+
+  form button{
+        margin-right: 10%;
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 1rem;
+        border: none;
+        background-color: #60aaf3;
+        margin-top: 1rem;
+    }
+    
+form button:hover{
+        border: 1px solid #0073e6;
+        background: #fff;
+}
+
+/* testimonials */
+
+.testimonials{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.testimonial{
+    gap: 1.5rem;
+    display: grid;
+    place-items: center;
+    background: #b3d9ff;
+    border: 1px solid #60aaf3;
+    padding: 2rem;
+    border-radius: 3rem;
+    margin: 80px;
+}
+
+.testimonial img{
+    border-radius: 50%;
+    width: 80px;
+    padding: 5px;
+    background: #60aaf3;
+}
+
+.testimonial h2{
+    color: #3f3f3f;
+}
+
+.testimonial p{
+    font-size: 16px;
+    text-align: center;
+}
+
+.testimonial .social{
+    margin-top: 1rem;
+}
+.testimonial .social img{
+    width: 3rem;
+    background: #81bbf5;
+    border: 1px solid #0073e6;
+}
+
+/* footer */
+
+footer{
+    background: linear-gradient(45deg, #c3d6ff, #b3d9ff);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer p{
+    font-size: 16px;
+}
+
+.copy{
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+@media only screen and (max-width: 1200px){
+    nav ul{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:980px){
+    .header{
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+
+    .services{
+        margin: 3rem;
+        gap: 3rem;
+    }
+    .service{
+        padding: 3rem;
+    }
+    .anim img{
+        width: 300px;
+    }
+    .left-form{
+        margin-left: 10%;
+    }
+
+    .testimonial{
+     width: 200px;
+    }
+
+    .testimonial .social img{
+        width: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+   .form{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 1rem;
+   }
+
+   .me img{
+    width: 400px;
+    margin: 2rem;
+   }
+
+   .social img{
+    width: 2rem;
+    margin: 0;
+   }
+
+   .left-form p{
+    text-align: center;
+   }
+   .testimonial{
+    margin: 4rem;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+ .skills{
+    display: grid;
+    place-items: center;
+ }
+ .services{
+    display: block;
+ }
+ .service{
+    margin-bottom: 3rem;
+ }
+
+ .anim img{
+    width: 180px;
+ }
+
+ .testimonials{
+    display: grid;
+ }
+}
+
+@media only screen and (min-width: 340px) {
+    .me img{
+        width: 300px;
+        margin-bottom: 0;
+    }
+
+    .social img{
+        width: 2rem;
+    }
+
+    .skill img{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .qualification{
+        margin: 3rem;
+    }
+
+}
